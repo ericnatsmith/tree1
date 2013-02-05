@@ -1,5 +1,10 @@
 Treebook::Application.routes.draw do
+  devise_for :users
+
   resources :statuses
+  root to: 'statuses#index'
+
+  # root to: 'controler#action'
 
 
   # The priority is based upon order of creation:
